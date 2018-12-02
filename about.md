@@ -4,9 +4,11 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Master student at University of Rochester, major in Computer Science. I have interests in Adversarial Machine Learning, Computer Vision, and Generative Models.</p>
+<p>M.S. Computer Science at University of Rochester (current). B.S. Mathematics at Renmin University of China.</p>
 
-<p>Completed bachelor's degree at Renmin University of China, major in Mathematics.</p>
+<p>Specific interests in Adversarial Machine Learning and its intersection with Computer Vision.</p>
+
+<p>Language lover with a learning priority queue: Spanish, Japanese, France, Klingon, Russian, German, Korean, ... </p>
 
 <h2>Skills</h2>
 

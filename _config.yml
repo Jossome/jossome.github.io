@@ -1,6 +1,6 @@
 # main text of home
 name: Wang, Shaojie (Joss)
-bio: Life goes on. Live it gentally and patiently.
+bio: Adversarial Machine Learning, Computer Vision, Fingerstyle, Multilingual-to-be. 
 
 # twitter summary info
 description: A blog about Joss
@@ -14,7 +14,7 @@ picture: assets/images/profile.jpeg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: http://www.csug.rochester.edu/u/swang115/
 
 url: https://jossome.github.io
 # your url: http://USERNAME.github.io
@@ -56,7 +56,7 @@ email: shaojie.wang@rochester.edu
 authors:
     joss:
         name: Shaojie Wang
-        bio: Life goes on. Live it gentally and patiently.
+        bio: Adversarial Machine Learning, Computer Vision, Fingerstyle, Multilingual-to-be. 
         external-image: false
         picture: assets/images/profile.jpeg
         # twitter: Joss
@@ -71,7 +71,7 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
