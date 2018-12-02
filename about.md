@@ -23,5 +23,5 @@ layout: page
 <h2>Projects</h2>
 
 <ul>
-	<li>See my <a href="https://github.com/">GitHub page</a>.</li>
+	<li>See my <a href="https://github.com/Jossome">GitHub page</a>.</li>
 </ul>
