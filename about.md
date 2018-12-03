@@ -6,7 +6,7 @@ layout: page
 
 <p>M.S. Computer Science at University of Rochester (current). B.S. Mathematics at Renmin University of China.</p>
 
-<p>Specific interests in Adversarial Machine Learning and its intersection with Computer Vision.</p>
+<p>Broad interests in Computer Vision. Specific interests in Adversarial Machine Learning and its intersection with Computer Vision.</p>
 
 <p>Language lover with a life-long learning priority queue: Spanish, Japanese, France, Klingon, Russian, German, Korean, ... </p>
 
@@ -16,7 +16,7 @@ layout: page
 
 <ul class="skill-list">
 	<li><b>Coding:</b> Python (PyTorch), C/C++, OCaml, Rust</li>
-	<li><b>Guitar:</b> <a href="https://www.youtube.com/watch?v=uAnkTdG0shA">Landscape by Kotaro Oshio</a> is easy for me.</li>
+	<li><b>Guitar:</b> <a href="https://www.youtube.com/watch?v=uAnkTdG0shA">Landscape</a> by Kotaro Oshio is easy for me.</li>
     <li><b>Sports:</b> CS:GO, Minecraft, swimming, basketball.</li>
 </ul>
 
