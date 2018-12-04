@@ -17,7 +17,7 @@ layout: page
 <ul class="skill-list">
 	<li><b>Coding:</b> Python (PyTorch), C/C++, OCaml, Rust</li>
 	<li><b>Guitar:</b> <a href="https://www.youtube.com/watch?v=uAnkTdG0shA">Landscape</a> by Kotaro Oshio is easy for me.</li>
-    <li><b>Sports:</b> CS:GO, Minecraft, swimming, basketball.</li>
+    <li><b>Sports:</b> CS:GO, Minecraft (yes the avatar is the real me), swimming, basketball.</li>
 </ul>
 
 <h2>Projects</h2>
