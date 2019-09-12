@@ -1,6 +1,6 @@
 # main text of home
 name: Wang, Shaojie (Joss)
-bio: Computer Vision, Adversarial Machine Learning, Fingerstyle, Multilingual-to-be. 
+bio: Trying to act as normal people do but keeping failing. 
 
 # twitter summary info
 description: A blog about Joss
@@ -14,7 +14,7 @@ picture: assets/images/profile.jpeg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: http://www.csug.rochester.edu/u/swang115/
+resume-url: https://jossome.github.io
 
 url: https://jossome.github.io
 # your url: http://USERNAME.github.io
@@ -51,7 +51,7 @@ github: Jossome
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: shaojie.wang@rochester.edu
+email: joss@wustl.edu
 
 authors:
     joss:
