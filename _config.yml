@@ -1,9 +1,9 @@
 # main text of home
-name: Wang, Shaojie (Joss)
-bio: Human deservers extinction. Humanity deservers redemption. 
+name: Shaojie (Joss) Wang
+bio: Human deservers extinction. Humanity deservers redemption.
 
 # twitter summary info
-description: A blog about Joss
+description: A blog about research and non-research stuffs.
 
 # if it's an external image, update below for true
 # better with square images
@@ -41,7 +41,7 @@ disqus:
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
-# spotify: myspotify
+spotify: jossomeone
 github: Jossome
 # gitlab: mygitlab
 # lastfm: mylastfm
@@ -51,12 +51,18 @@ github: Jossome
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: joss@wustl.edu
+email: jossome.one@gmail.com
 
 authors:
-    joss:
+    sw:
         name: Shaojie Wang
-        bio: Computer Vision, Adversarial Machine Learning, Fingerstyle, Multilingual-to-be. 
+        bio: Computer Vision, Adversarial Machine Learning 
+        external-image: false
+        picture: assets/images/profile.jpeg
+        # twitter: Joss
+    joss:
+        name: Joss Wang
+        bio: Food, Fingerstyle, Multilingual, Skiing, and so on. 
         external-image: false
         picture: assets/images/profile.jpeg
         # twitter: Joss
