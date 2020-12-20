@@ -8,7 +8,7 @@ headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
 description: "How to correctly configure waymo dataset installation."
-category: project
+category: blog
 author: Joss
 externalLink: false
 ---
@@ -16,6 +16,11 @@ externalLink: false
 
 ## Some notes on using `bazel`
 - Before building, do `export TEST_TMPDIR=/tmp/bazel` to avoid runing it on NFS.
+
+## Misc
+Some useful commands when running on cluster.
+- `module avail`, `module add gcc-8.3.0`
+- `lsload -gpuload`
 
 ## More docs
 please refer to [my doc](https://github.com/Jossome/Waymo-open-dataset-document) as a supplement to the official tutorial.
