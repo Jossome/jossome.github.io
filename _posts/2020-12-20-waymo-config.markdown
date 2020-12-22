@@ -25,6 +25,11 @@ externalLink: false
     - If the code we use doesn't specify or filter the difficulty level, then we should compare the L2 AP with our trained models.
     - I highly suspect that submissions on leaderboards are prediction on all cameras, while I'm only predicting on the front view.
 
+# YOLO on Waymo
+Using YOLOv4 on Waymo.
+- Cannot find a reliable PyTorch repo right now. First try mmdet::yolov4 branch; Second, the personal repo mmdet-yolov4; Third, Wong's implementation since he is one of the contributors of the darknet repo; Fourth, the c implementation.
+- May need to adjust the anchor settings. Try to understand how this works. Or may not.
+
 # Misc
 Some useful commands when running on cluster.
 - `module avail`, `module add gcc-8.3.0`
