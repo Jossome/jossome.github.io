@@ -1,0 +1,68 @@
+---
+title: "Customize conda environment prompt position"
+layout: post
+date: 2021-05-18 18:10
+tag: misc 
+image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
+headerImage: false
+projects: true
+hidden: false # don't count this post in blog pagination
+description: "How to play with PS1 and conda."
+category: blog
+author: Joss
+externalLink: false
+---
+
+# Problem
+conda virtual environment always displays `(env_name)` at the beginning of the prompt. However, I want this to be in the middle of PS1, or at any positions I want it to be.
+
+I'm using `oh-my-zsh`, `bira` theme. 
+
+# Solution
+- Step 1: Disable the display of environment name in conda by running 
+    ```
+    conda config --set changeps1 False
+    ```
+- Step 2: Modify `bira.zsh-theme`: 
+    Add
+    ```
+    if [[ -n "$CONDA_DEFAULT_ENV" ]]; then
+        local conda_prompt='%{$fg[blue]%}% ($(basename $CONDA_DEFAULT_ENV)) %{$reset_color%}'
+    else
+        local conda_prompt=''
+    fi
+
+    ```
+    And add `${conda_prompt}` to the desired position in `PROMPT` variable, e.g. at the end:
+    ```
+    PROMPT="╭─${user_host}${current_dir}${rvm_ruby}${git_branch}${venv_prompt}${conda_prompt}
+    ```
+- Step 3: Add extra script in `/path/to/anaconda/etc/profile.d/conda.sh` to refresh the theme:
+    ```
+    _reload_theme() {
+        if [[ "$ZSH_THEME" == "random" ]]; then
+          if [[ "${(t)ZSH_THEME_RANDOM_CANDIDATES}" = "array" ]] && [[ "${#ZSH_THEME_RANDOM_CANDIDATES[@]}" -gt 0 ]]; then
+            themes=($ZSH/themes/${^ZSH_THEME_RANDOM_CANDIDATES}.zsh-theme)
+          else
+            themes=($ZSH/themes/*zsh-theme)
+          fi
+          N=${#themes[@]}
+          ((N=(RANDOM%N)+1))
+          RANDOM_THEME=${themes[$N]}
+          source "$RANDOM_THEME"
+          echo "[oh-my-zsh] Random theme '$RANDOM_THEME' loaded..."
+        else
+          if [ ! "$ZSH_THEME" = ""  ]; then
+            if [ -f "$ZSH_CUSTOM/$ZSH_THEME.zsh-theme" ]; then
+              source "$ZSH_CUSTOM/$ZSH_THEME.zsh-theme"
+            elif [ -f "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme" ]; then
+              source "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme"
+            else
+              source "$ZSH/themes/$ZSH_THEME.zsh-theme"
+            fi
+          fi
+        fi
+    }
+    ```
+    and call `_reload_theme` at the end of `_conda_activate`, `_conda_deactivate`, `_conda_reactivate`.
+
