@@ -5,4 +5,4 @@ layout: page
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
 <h2>About</h2>
-<p>Quitted PhD.</p>
+<p>Quant.</p>
